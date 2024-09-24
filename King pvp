@@ -1,0 +1,52 @@
+-- Load the loading message
+loadstring(game:HttpGet('https://raw.githubusercontent.com/yourusername/yourrepository/main/loading.lua'))()
+
+getgenv().SpamSkill = false
+getgenv().AutoUseRaceV3 = true
+getgenv().AutoUseRaceV4 = true
+getgenv().SpamSkillOnRaceV4 = true
+getgenv().Invisible = true
+getgenv().InCombatNoReset = false
+getgenv().Team = "Pirates" -- Set to "Pirates" or "Marines"
+getgenv().TweenSpeed = 300 -- 350 max or Get Tp Back
+
+getgenv().Setting = { -- Select Weapon settings
+    ["Melee"] = {
+        ["Enable"] = true,  -- Enable melee
+        ["Delay"] = 1,  -- Delay for melee attacks
+        ["Skills"] = {
+            ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Melee Skill Z
+            ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Melee Skill X
+            ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Melee Skill C
+        },
+    },
+    ["Blox Fruit"] = {
+        ["Enable"] = true,  -- Enable Blox Fruit
+        ["Delay"] = 1,  -- Delay for Blox Fruit attacks
+        ["Skills"] = {
+            ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Fruit Skill Z
+            ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Fruit Skill X
+            ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Fruit Skill C
+            ["V"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Fruit Skill V
+            ["F"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Fruit Skill F
+        },
+    },
+    ["Sword"] = {
+        ["Enable"] = true,  -- Enable sword
+        ["Delay"] = 1,  -- Delay for sword attacks
+        ["Skills"] = {
+            ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Sword Skill Z
+            ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Sword Skill X
+        },
+    },
+    ["Gun"] = {
+        ["Enable"] = true,  -- Enable gun
+        ["Delay"] = 1,  -- Delay for gun attacks
+        ["Skills"] = {
+            ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Gun Skill Z
+            ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1, ["TimeToNextSkill"] = 0},  -- Gun Skill X
+        },
+    },
+}
+
+-- Load external script 
